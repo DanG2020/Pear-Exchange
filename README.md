@@ -8,9 +8,8 @@ Users can also purchase stakes in other ML model builders on our platform. This 
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [How we built it](#Howwebuiltit)
+- [Whats next?](#whatsnext)
 - [License](#license)
 - [Contact](#contact)
 
@@ -33,3 +32,7 @@ We built the blockchain backbone and the cryptocurrency for our project using NE
 ## What's Next?
 
 We wanted a feature for users to be able to pay Juicy Pears to use our platform to create or personalize AI models. However, we realized quickly that this idea wasn't feasible for the scope of the hackathon. This could be something we look into implementing in the future. 
+
+##License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
