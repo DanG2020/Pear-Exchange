@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -6,10 +7,10 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="site-name">PEAR EXCHANGE</div>
       <nav className="nav">
-        <a href="#">Page</a>
-        <a href="#">Page</a>
-        <a href="#">Page</a>
-        <input type="text" placeholder="Placeholder" />
+        <Link to="/">Home</Link>
+        <Link to="/why-pear">Why Pear?</Link>
+        <Link to="/info">Info Section</Link>
+        <input type="text" placeholder="Search" />
         <button>Button</button>
       </nav>
     </header>

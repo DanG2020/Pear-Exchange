@@ -2,7 +2,6 @@
 
 .App {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
   background-color: #1f1c36;
   font-family: "Lexend", sans-serif;
@@ -13,22 +12,17 @@
   padding: 20px;
   gap: 20px;
   flex: 1;
-}
-
-.sidebar {
-  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 45vw 45vw;
   gap: 20px;
-  align-items: center;
-  /* Center the content horizontally */
+  flex-wrap: wrap;
 }
 
-/* Media query to ensure responsiveness */
 @media (max-width: 780px) {
   .main {
     flex-direction: column;
@@ -39,4 +33,9 @@
   .content {
     width: 100%;
   }
+}
+
+.graphHold {
+  background-color: black;
+  border-radius: 8px;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
 .lexend-bold {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
@@ -5,44 +7,125 @@
   font-style: normal;
 }
 
-
 .sidebar {
-  background-color: #2c294d;
-  padding: 20px;
+  background-color: #f8f8f8;
   border-radius: 10px;
-  color: #dedee8
+  border-color: #cccccc;
+  color: #ccc;
+  font-family: "Lexend", sans-serif;
+  /* Fixed width */
+  width: auto !important;
+  height: calc(100vh - 40px);
+  top: 20px;
+  left: 20px;
+  /* Fixed height */
+
+  /* Move closer to the graph */
 }
+
+.main-content {
+
+  /* Sidebar width + spacing */
+  padding: 20px;
+  width: calc(100% - 360px);
+  /* Adjusted width to fit the content area */
+}
+
 
 .title {
   font-size: 18px;
   margin-bottom: 10px;
   font-family: "Lexend", sans-serif;
-  color: rgb(255, 255, 255);
-
-
+  color: #000000;
+  font-weight: bold;
 }
 
 .table {
   display: flex;
   flex-direction: column;
   font-family: "Lexend", sans-serif;
-
-
+  margin-bottom: 20px;
 }
 
-.header,
-.row {
+.headar {
   display: flex;
   justify-content: space-between;
-
-}
-
-.header {
-  font-weight: bold;
-  font-family: "Lexend", sans-serif;
-
 }
 
 .row {
-  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.comany {
+  width: 295px;
+}
+
+.prix {
+  width: 250px;
+}
+
+.headar {
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  /*border-bottom: 2px solid #e0e0e0; */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.row {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row .change {
+  color: inherit;
+}
+
+.row .change.positive {
+  color: #53eea9;
+}
+
+.row .change.negative {
+  color: #EA3A3A;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  gap: 10px;
+}
+
+.portfolio-item {
+  /* Adjusted width to fit within the sidebar */
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.portfolio-item .graph-data {
+  background-color: #f1f1f1;
+  border-color: #cccccc;
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }

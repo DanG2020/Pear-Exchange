@@ -12,12 +12,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #23203e;
+  background-color: #ffffff;
 }
 
 .site-name {
   font-size: 24px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Lexend", sans-serif;
 }
 
@@ -29,8 +29,14 @@
 .nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Lexend", sans-serif;
+}
+
+.header nav a:hover {
+  color: #53eea9;
+  text-decoration: underline;
+
 }
 
 .nav input {
@@ -46,7 +52,7 @@
 }
 
 .nav input::placeholder {
-  color: #aaa;
+  color: #000000;
   font-size: 18px;
 
   /* Change the placeholder color */
@@ -63,8 +69,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #53eea9;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: "Lexend", sans-serif;
   font-size: 16px;
 }

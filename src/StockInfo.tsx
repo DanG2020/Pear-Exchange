@@ -4,13 +4,14 @@ import './StockInfo.css';
 const StockInfo: React.FC = () => {
   return (
     <div className="stock-info">
-      <div className="title">PRN INC</div>
+      <div className="title">JPC</div>
       <div className="price">
-        50000 <span className="graph-change">+33%</span>
+        <span>50000</span>
+        <span className="positive">+33%</span> {/* Add logic to dynamically change class based on value */}
       </div>
       <div className="buttons">
-        <button className="buy">BUY</button>
-        <button className="sell">SELL</button>
+        <button className="buy">Buy</button>
+        <button className="sell">Sell</button>
       </div>
     </div>
   );

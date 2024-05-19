@@ -1,24 +1,30 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Graph from './Graph';
-import './App.css';
 import InfoSection from './InfoSection';
+import MainPage from './MainPage';
+import WhyPear from './WhyPear';
+import './App.css';
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
+    <Router>
       <Header />
       <div className="main">
-        <Sidebar />
         <div className="content">
-          <Graph />
-          <InfoSection />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/info" element={<InfoSection />} />
+          </Routes>
         </div>
+        <Routes>
+          <Route path="/why-pear" element={<WhyPear />} />
+        </Routes>
       </div>
-    </div>
+    </Router >
   );
-}
+};
 
 export default App;

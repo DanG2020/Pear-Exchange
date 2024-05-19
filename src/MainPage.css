@@ -1,23 +1,183 @@
-.lexend-bold {
+.main-container {
+  width: 100%;
   font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+  grid-column-start: span 2;
 }
 
-
-.main-page {
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: url('/stocks.png') no-repeat center center fixed;
+  background-size: cover;
+  font-size: larger;
+  color: #fff;
   text-align: center;
-  padding: 2em;
+  position: relative;
+  overflow: hidden;
 }
 
-.main-header {
-  background-color: #282c34;
+.titleHold {
+  display: flex;
+  flex-direction: row;
+  width: 17.5vw;
+}
+
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(142, 141, 141, 0.8);*/
+  z-index: 1;
+}
+
+.welcome-section h1,
+.welcome-section p,
+.welcome-section .link-button {
+  position: relative;
+  z-index: 2;
+}
+
+.link-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.link-button:hover {
+  background-color: #53eea9;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
   padding: 20px;
-  color: white;
 }
 
 .main-content {
-  font-size: 1.2em;
-  color: #333;
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #E0E0E0;
+  border-width: 2px;
+  border-style: solid;
+  color: #000000;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
+}
+
+.sidebar {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #E0E0E0;
+  border-width: 2px;
+  border-style: solid;
+  color: #000000;
+  font-family: "Lexend", sans-serif;
+  height: auto;
+}
+
+.trending-content,
+.neural-nets-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #E0E0E0;
+  border-width: 2px;
+  border-style: solid;
+  color: #000000;
+  padding: 20px;
+  width: 90%;
+  font-family: "Lexend", sans-serif;
+}
+
+.trending-header,
+.trending-row,
+.neural-nets-header,
+.neural-nets-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.trending-header,
+.neural-nets-header {
+  font-weight: bold;
+}
+
+.trending-row:last-child {
+  border-bottom: none;
+}
+
+.trending-title,
+.neural-nets-title {
+  width: 175px;
+  margin-right: 12.5px;
+}
+
+.trending-company,
+.trending-change,
+.neural-nets-company,
+.neural-nets-change {
+  flex: 1;
+  text-align: center;
+}
+
+.trending-title-big,
+.neural-nets-title-big {
+  width: 280px;
+  margin-right: 12.5px;
+}
+
+.trending-company-big,
+.trending-change-big,
+.neural-nets-company-big,
+.neural-nets-change-big {
+  flex: 1;
+  text-align: center;
+}
+
+.trending-price-big,
+.neural-nets-price-big {
+  margin-right: 50px;
+}
+
+.trending-company img,
+.neural-nets-company img {
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.trending-change.positive,
+.neural-nets-change.positive,
+.trending-rank.positive,
+.neural-nets-rank.positive {
+  color: #53eea9;
+}
+
+.trending-change.negative,
+.neural-nets-change.negative,
+.trending-rank.negative,
+.neural-nets-rank.negative {
+  color: #EA3A3A;
+}
+
+.neural-nets-content {
+  margin-top: 40px;
+  /* Add space between sections */
 }

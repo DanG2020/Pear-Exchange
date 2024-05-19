@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
 
 .stock-info {
-  background-color: #2c294d;
-  padding: 10px;
+  background-color: transparent;
+  padding: 20px;
+  border: #E0E0E0 solid 2px;
   border-radius: 10px;
   text-align: center;
-  width: 780px;
-  /* Fixed width */
+  width: fit-content;
   height: 88px;
-  /* Fixed height */
   box-sizing: border-box;
-  margin: 0 auto 10px auto;
-  /* Center the info section with bottom margin */
+  margin: 8px 0;
+  /* Adjust margins to move closer to the right */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,29 +19,38 @@
 .stock-info .title {
   font-family: "Lexend", sans-serif;
   font-size: 40px;
-  color: #dedee8;
-  margin: 0;
-  /* Remove default margin */
+  color: #000000;
+  margin: 0 1px 0 0;
 }
 
 .stock-info .price {
   font-family: "Lexend", sans-serif;
   font-size: 24px;
-  color: #53eea9;
   margin: 0 20px;
-  /* Add margin for spacing */
+  display: flex;
+  align-items: center;
+}
+
+.stock-info .price span {
+  color: #777777;
+}
+
+.stock-info .price .positive {
+  color: #53eea9;
+}
+
+.stock-info .price .negative {
+  color: #8133ff;
 }
 
 .stock-info .buttons {
   display: flex;
-  gap: 10px;
+  gap: 12.5px;
 }
 
 .stock-info .buttons button {
   width: 106px;
-  /* Fixed width */
   height: 52px;
-  /* Fixed height */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -56,6 +64,6 @@
 }
 
 .stock-info .buttons .sell {
-  background-color: #8133ff;
+  background-color: #ea3a3a;
   color: #ffffff;
 }
