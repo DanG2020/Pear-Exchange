@@ -1,0 +1,23 @@
+.lexend-bold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.main-page {
+  text-align: center;
+  padding: 2em;
+}
+
+.main-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.main-content {
+  font-size: 1.2em;
+  color: #333;
+}

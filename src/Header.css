@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+.lexend-bold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #23203e;
+}
+
+.site-name {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-family: "Lexend", sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Lexend", sans-serif;
+}
+
+.nav input {
+  width: 400px;
+  /* Fixed width */
+  height: 40px;
+  /* Fixed height */
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Lexend", sans-serif;
+}
+
+.nav input::placeholder {
+  color: #aaa;
+  font-size: 18px;
+
+  /* Change the placeholder color */
+  font-style: italic;
+  /* Change the placeholder text style */
+}
+
+.nav button {
+  width: 106px;
+  /* Fixed width */
+  height: 52px;
+  /* Fixed height */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+}

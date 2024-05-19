@@ -1,0 +1,48 @@
+.lexend-bold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.sidebar {
+  background-color: #2c294d;
+  padding: 20px;
+  border-radius: 10px;
+  color: #dedee8
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Lexend", sans-serif;
+  color: rgb(255, 255, 255);
+
+
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend", sans-serif;
+
+
+}
+
+.header,
+.row {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header {
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+
+}
+
+.row {
+  padding: 5px 0;
+}
