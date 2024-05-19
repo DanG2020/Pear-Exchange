@@ -9,8 +9,8 @@ const StockInfo: React.FC = () => {
         50000 <span className="graph-change">+33%</span>
       </div>
       <div className="buttons">
-        <button className="buy">Buy</button>
-        <button className="sell">Sell</button>
+        <button className="buy">BUY</button>
+        <button className="sell">SELL</button>
       </div>
     </div>
   );
