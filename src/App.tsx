@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
-import Sidebar from './Sidebar';
-import Graph from './Graph';
+/*import Sidebar from './Sidebar';
+import Graph from './Graph'; */
 import InfoSection from './InfoSection';
 import MainPage from './MainPage';
 import WhyPear from './WhyPear';
